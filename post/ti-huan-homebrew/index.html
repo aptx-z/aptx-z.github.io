@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | 996 TU</title>
+<title>替换 Homebrew | 996 TU</title>
 <meta name="description" content="生活与工作平衡">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -97,14 +97,54 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">替换 Homebrew</h2>
+            <div class="post-date">2020-02-28</div>
             
-              <a class="tag" href="http://aptx-z.github.io/tag/dGbuSEyBh/">brew</a>
+            <div class="post-content">
+              <h1 id="替换-homebrew">替换 Homebrew</h1>
+<p>git -C &quot;$(brew --repo)&quot; remote set-url origin https://mirrors.ustc.edu.cn/brew.git</p>
+<h1 id="替换-homebrew-core">替换 Homebrew Core</h1>
+<p>git -C &quot;$(brew --repo homebrew/core)&quot; remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git</p>
+<h1 id="替换-homebrew-cask">替换 Homebrew Cask</h1>
+<p>git -C &quot;$(brew --repo homebrew/cask)&quot; remote set-url origin https://mirrors.ustc.edu.cn/homebrew-cask.git</p>
+<h1 id="替换-homebrew-bottles">替换 Homebrew-bottles</h1>
+<h1 id="对于-bash-用户">对于 bash 用户：</h1>
+<p>echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' &gt;&gt; ~/.bash_profile<br>
+source ~/.bash_profile</p>
+<h1 id="对于zsh用户">对于zsh用户：</h1>
+<p>echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' &gt;&gt; ~/.zshrc<br>
+source ~/.zshrc</p>
+<h1 id="重置brewgit">重置brew.git:</h1>
+<p>cd &quot;$(brew --repo)&quot;<br>
+git remote set-url origin https://github.com/Homebrew/brew.git</p>
+<h1 id="重置homebrew-coregit">重置homebrew-core.git:</h1>
+<p>cd &quot;$(brew --repo)/Library/Taps/homebrew/homebrew-core&quot;<br>
+git remote set-url origin https://github.com/Homebrew/homebrew-core.git</p>
+<h1 id="重置homebrew-bottles源">重置homebrew-bottles源</h1>
+<h1 id="注释掉bash配置文件里的有关homebrew-bottles即可恢复官方源-重启bash或让bash重读配置文件">注释掉bash配置文件里的有关Homebrew Bottles即可恢复官方源。 重启bash或让bash重读配置文件。</h1>
+<p>brew update</p>
+
+            </div>
             
-              <a class="tag" href="http://aptx-z.github.io/tag/4NJDcWeDjF/">Homebrew</a>
+              <div class="tag-container">
+                
+                  <a href="http://aptx-z.github.io/tag/dGbuSEyBh/" class="tag">
+                    brew
+                  </a>
+                
+                  <a href="http://aptx-z.github.io/tag/4NJDcWeDjF/" class="tag">
+                    Homebrew
+                  </a>
+                
+              </div>
             
+            
+
+            
+
           </div>
+
         </div>
       </div>
     </div>
